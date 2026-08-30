@@ -18,6 +18,7 @@
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header" id="header">
@@ -27,56 +28,51 @@
         <!--Navigation-->
         <nav class="navbar" id="navbar">
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class=" nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class=" nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="services.html" class=" nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="products.html" class=" nav-link">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a href="projects.html" class=" nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class=" nav-link">Contact Us</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link active">Products</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
             </ul>
         </nav>
     
-    <!--Right Side Button-->
-    <div class="header-action">
-        <a href="order.html" class="btn btn-primary">
-            <span>Request a Quote</span>
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    <!--Mobile Menu Button-->
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false">
-                <span><a href="index.html">Home</a></span>
-                <span></span>
-                <span></span>
-        </button>
+        
+        <!--Right Side Button-->
+        <div class="header-action">
+            <a href="order.html" class="btn btn-primary">
+                <span>Request a Quote</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
 
+    <!-- MOBILE MENU -->
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Toggle Navigation"
+            aria-expanded="false"
+            type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+
+            </button>
     </div>
-    </div>
-    </header>
-    <!--Page Bunner Section-->
-    <section class="page-bunner">
-        <div class="bunner-overlay">
+</header>
+    <!--Page Banner Section-->
+    <section class="page-banner">
+        <div class="banner-overlay">
             <div class="container">
-                <!--Bunner Content-->
-                <div class="bunner-content">
+                <!--Banner Content-->
+                    <div class="banner-content">
                     <span class="section-subtitle">
                         OUR PRODUCTS
                     </span>
-                    <h2 class="section-title">Quality ICT Products You Can Trust</h2>
+                    <h1 class="section-title">Quality ICT Products You Can Trust</h1>
                     <p class="section-description">Discover our wide selection of genuine ICT products, including computers, networking equipment, CCTV systems, printers, software, and accessories. We supply reliable technology solutions that support businesses, institutions, and individuals.</p>
-                    <!--Breadscrumb-->
-                    <nav class="breadscrumb">
+                    <!--Breadcrumb-->
+                    <nav class="breadcrumb">
                         <a href="index.html">Home</a>
                         <span>Products</span>
                     </nav>
@@ -137,11 +133,11 @@
                 <!--LAPTOPS-->
                 <div class="category-card">
                     <div class="category-image">
-                        <img src="image/products/Categories/laptop" alt="laptops">
+                        <img src="image/products/Categories/laptop.jpg" alt="laptops">
 
                     </div>
                     <div class="category-content">
-                        <span class="categori-badge">Computing</span>
+                        <span class="category-badge">Computing</span>
                         <h3>Laptops</h3>
                         <p>High-performance laptops built for productivity, mobility, and modern business operations.</p>
                         <a href="#" class="category-btn">
@@ -157,7 +153,7 @@
                     </div>
                     <div class="category-content">
                         <span class="category-badge">Office</span>
-                        <h3>Printers & Scanner</h3>
+                        <h3>Printers & Scanners</h3>
                         <p>Professional printing and scanning solutions for offices, schools, and institutions.</p>
                         <a href="#" class="category-btn">
                             View Products
@@ -186,32 +182,34 @@
     <!--Why Choose DSS Products-->
     <section class="why-products" id="why-products">
         <div class="container">
-            <!--Section header-->
+
+            <!--Section Header-->
             <div class="section-header">
                 <span class="section-subtitle">WHY DSS PRODUCTS</span>
-                <h2 class="section-title">TECHNOLOGY YOU CAN BUY WITH CONFIDENCE </h2>
-                <p class="description">We are committed to supplying quality technology products backed by reliable service, professional guidance, and customer support.</p>
+                <h2 class="section-title">Technology You Can Buy With Confidence</h2>
+                <p class="section-description">We are committed to supplying quality technology products backed by reliable service, professional guidance, and customer support.</p>
             </div>
 
-            <!--Featured Grid-->
+            <!--Features Grid-->
             <div class="products-features">
-                <!--Feature 1-->
-                <article class="product-feature-card">
-                    <div class="product-feature-icon">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                    <h3>Quality Products</h3>
-                    <p>We source reliable technology products selected to meet the needs of businesses, institutions, and individuals.</p>
-                </article>
-                <!--Feature 2-->
-                <article class="product-feature-card">
-                    <div class="product-feature-icon">
-                        <i class="fa-solid fa-tags"></i>
-                    </div>
-                    <h3>Competitive Pricing</h3>
-                    <p>We aim to provide quality technology products at competitive prices that offer excellent value for your investment.</p>
-                </article>
-            </div>
+            <!--Feature 1-->
+            <article class="product-feature-card">
+                <div class="product-feature-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3>Quality Products</h3>
+                <p>We source reliable technology products selected to meet the needs of businesses, institutions, and individuals.</p>
+            </article>
+
+            <!--Feature 2-->
+            <article class="product-feature-card">
+                <div class="product-feature-icon">
+                    <i class="fa-solid fa-tags"></i>
+                </div>
+                <h3>Competitive Pricing</h3>
+                <p>We aim to provide quality technology products at competitive prices that offer excellent value for your investment.</p>
+            </article>
+
             <!--Feature 3-->
             <article class="product-feature-card">
                 <div class="product-feature-icon">
@@ -220,6 +218,7 @@
                 <h3>Expert Guidance</h3>
                 <p>Our team helps you choose products that match your requirements, budget, and intended use.</p>
             </article>
+
             <!--Feature 4-->
             <article class="product-feature-card">
                 <div class="product-feature-icon">
@@ -228,24 +227,27 @@
                 <h3>Product Sourcing</h3>
                 <p>Can't find what you need? We can source specific technology products based on your requirements.</p>
             </article>
+
             <!--Feature 5-->
-            <article class="product-feature-icon">
+            <article class="product-feature-card">
                 <div class="product-feature-icon">
                     <i class="fa-solid fa-headset"></i>
                 </div>
                 <h3>Customer Support</h3>
                 <p>We remain available to assist with product guidance, setup, troubleshooting, and support.</p>
             </article>
+
             <!--Feature 6-->
-            <article class="product-feature-icon">
+            <article class="product-feature-card">
                 <div class="product-feature-icon">
                     <i class="fa-solid fa-handshake"></i>
                 </div>
                 <h3>Trusted Service</h3>
                 <p>We focus on professionalism, transparency, and building long-term relationships with our customers.</p>
-            </article> 
+            </article>
         </div>
     </section>
+
     <!--Product Sourcing/ Pre-Order-->
     <section class="product-sourcing" id="product-sourcing">
         <div class="container">
@@ -305,8 +307,8 @@
             <!--section header-->
             <div class="section-header">
                 <span class="section-subtitle">HOW TO ORDER</span>
-                <h2 class="section-title">Getting Your Technology Simple</h2>
-                <p class="secttion-description">Whether you find what you need in our product categories or require us to source a specific product, our ordering process is simple and straightforward.</p>
+                <h2 class="section-title">Getting Your Technology Made Simple</h2>
+                <p class="section-description">Whether you find what you need in our product categories or require us to source a specific product, our ordering process is simple and straightforward.</p>
             </div>
             <!--Order Steps-->
             <div class="order-steps">
@@ -356,13 +358,14 @@
             </div>
         </div>
     </section>
+
     <!--PRODUCTS CTA-->
     <section class="products-cta" id="products-cta">
         <div class="container">
             <div class="products-cta-content">
                 <span class="section-subtitle">NEED A TECHNOLOGY PRODUCT?</span>
-                <h2>Let's Find the Right Technology for You</h2>
-                <p>Whether you need a laptop, networking equipment, CCTV system, office equipment, or a product that is not listed on our website, Daka Systems Solutions is ready to help.</p>
+                <h2 class="section-title">Let's Find the Right Technology for You</h2>
+                <p class="section-description">Whether you need a laptop, networking equipment, CCTV system, office equipment, or a product that is not listed on our website, Daka Systems Solutions is ready to help.</p>
                 
                 <div class="cta-buttons">
                     <a href="order.html" class="btn btn-primary">
@@ -413,7 +416,6 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="projects.html">Projects</a></li>
-                        <li><a href="order.html">Order</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -473,5 +475,12 @@
             </div>
         </div>
     </footer>
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!--javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
