@@ -1,0 +1,1171 @@
+/*== PROJECTS PAGE BANNER ==*/
+
+.projects-banner{
+    position:relative;
+    min-height:520px;
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9,37,75,0.96) 0%,
+            rgba(10,77,140,0.82) 50%,
+            rgba(10,77,140,0.60) 100%
+        ),
+        url("../image/about/Team/Grace.jfif") center/cover no-repeat;
+
+    overflow:hidden;
+}
+
+
+/*== BANNER OVERLAY ==*/
+
+.projects-banner .banner-overlay{
+    position:relative;
+    width:100%;
+    min-height:520px;
+
+    display:flex;
+    align-items:center;
+}
+
+
+/*== BANNER CONTENT ==*/
+
+.projects-banner .banner-content{
+    max-width:780px;
+    padding:70px 0;
+}
+
+
+/*== BANNER SUBTITLE ==*/
+
+.projects-banner .banner-subtitle{
+    display:inline-block;
+    margin-bottom:18px;
+
+    color:var(--secondary-color);
+
+    font-size:.95rem;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+
+/*== BANNER TITLE ==*/
+
+.projects-banner .banner-title{
+    margin-bottom:22px;
+
+    color:white;
+
+    font-size:3.5rem;
+    line-height:1.15;
+}
+
+
+/*== BANNER DESCRIPTION ==*/
+
+.projects-banner .banner-description{
+    max-width:700px;
+    margin:0 0 28px;
+
+    color:rgba(255,255,255,.88);
+
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+
+/*== BREADCRUMB ==*/
+
+.projects-banner .breadcrumb{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:.95rem;
+    font-weight:500;
+}
+
+
+/*== BREADCRUMB HOME ==*/
+
+.projects-banner .breadcrumb a{
+    color:white;
+    transition:var(--transition);
+}
+
+.projects-banner .breadcrumb a:hover{
+    color:var(--secondary-color);
+}
+
+
+/*== BREADCRUMB CURRENT PAGE ==*/
+
+.projects-banner .breadcrumb span{
+    position:relative;
+    padding-left:18px;
+
+    color:white;
+}
+
+
+/*== BREADCRUMB SLASH ==*/
+
+.projects-banner .breadcrumb span::before{
+    content:"/";
+
+    position:absolute;
+    left:0;
+
+    color:var(--secondary-color);
+}
+
+
+/*==================================================
+    TABLET / SMALL LAPTOP
+==================================================*/
+
+@media(max-width:992px){
+
+    .projects-banner{
+        min-height:480px;
+    }
+
+    .projects-banner .banner-overlay{
+        min-height:480px;
+    }
+
+    .projects-banner .banner-content{
+        max-width:700px;
+    }
+
+    .projects-banner .banner-title{
+        font-size:3rem;
+    }
+
+}
+
+
+/*==================================================
+    TABLET / MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+    .projects-banner{
+        min-height:450px;
+    }
+
+    .projects-banner .banner-overlay{
+        min-height:450px;
+    }
+
+    .projects-banner .banner-content{
+        padding:60px 0;
+    }
+
+    .projects-banner .banner-title{
+        font-size:2.5rem;
+    }
+
+    .projects-banner .banner-description{
+        font-size:1rem;
+    }
+
+}
+
+
+/*==================================================
+    SMALL MOBILE
+==================================================*/
+
+@media(max-width:576px){
+
+    .projects-banner{
+        min-height:420px;
+    }
+
+    .projects-banner .banner-overlay{
+        min-height:420px;
+    }
+
+    .projects-banner .banner-content{
+        padding:50px 0;
+    }
+
+    .projects-banner .banner-subtitle{
+        font-size:.8rem;
+        letter-spacing:1px;
+    }
+
+    .projects-banner .banner-title{
+        font-size:2rem;
+    }
+
+    .projects-banner .banner-description{
+        font-size:.92rem;
+        line-height:1.7;
+    }
+
+    .projects-banner .breadcrumb{
+        font-size:.85rem;
+    }
+
+}
+
+/*==================================================
+    PROJECTS OVERVIEW
+==================================================*/
+
+.project-overview{
+    background:var(--white-color);
+}
+
+.projects-overview-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+
+
+/*== OVERVIEW IMAGE ==*/
+
+.projects-overview-image{
+    position:relative;
+    overflow:hidden;
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-md);
+}
+
+.projects-overview-image img{
+    width:100%;
+    height:500px;
+    max-width:100%;
+    object-fit:cover;
+    transition:var(--transition);
+}
+
+.projects-overview-image:hover img{
+    transform:scale(1.04);
+}
+
+.projects-overview-image::after{
+    content:"";
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    width:80px;
+    height:5px;
+    background:var(--secondary-color);
+    border-radius:10px;
+}
+
+
+/*== OVERVIEW CONTENT ==*/
+
+.projects-overview-content{
+    max-width:650px;
+}
+
+.projects-overview-content .section-subtitle{
+    margin-bottom:12px;
+}
+
+.projects-overview-content .section-title{
+    margin-bottom:24px;
+    font-size:2.7rem;
+    line-height:1.2;
+}
+
+.projects-overview-content .section-description{
+    max-width:100%;
+    margin:0 0 18px;
+    color:var(--text-color);
+    line-height:1.8;
+}
+
+
+/*== PROJECT HIGHLIGHTS ==*/
+
+.project-overview-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px 25px;
+    margin-top:28px;
+}
+
+.project-overview-list li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-weight:600;
+    color:var(--heading-color);
+}
+
+.project-overview-list li i{
+    width:20px;
+    height:20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+    background:var(--secondary-color);
+    color:var(--white-color);
+
+    border-radius:50%;
+    font-size:.65rem;
+}
+
+
+/*== OVERVIEW BUTTON ==*/
+
+.projects-overview-content .btn{
+    margin-top:30px;
+}
+
+
+/*==================================================
+    PROJECTS PORTFOLIO
+==================================================*/
+
+.project-portfolio{
+    background:var(--light-color);
+}
+
+.project-portfolio .section-header{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 55px;
+}
+
+.project-portfolio .section-description{
+    max-width:760px;
+    margin:0 auto;
+}
+
+
+/*== PROJECT GRID ==*/
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+
+/*== PROJECT CARD ==*/
+
+.project-card{
+    position:relative;
+
+    background:var(--white-color);
+
+    border:1px solid var(--border-color);
+    border-radius:var(--radius-md);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+    display:flex;
+    flex-direction:column;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--shadow-lg);
+    border-color:transparent;
+}
+
+
+/*== PROJECT IMAGE ==*/
+
+.project-image{
+    position:relative;
+    width:100%;
+    height:240px;
+
+    overflow:hidden;
+
+    background:var(--light-color);
+}
+
+.project-image img{
+    width:100%;
+    height:100%;
+    max-width:100%;
+
+    object-fit:cover;
+
+    transition:var(--transition);
+}
+
+.project-card:hover .project-image img{
+    transform:scale(1.06);
+}
+
+
+/*== PROJECT CATEGORY ==*/
+
+.project-category{
+    position:absolute;
+    top:18px;
+    left:18px;
+
+    padding:6px 13px;
+
+    border-radius:30px;
+
+    background:var(--secondary-color);
+    color:var(--white-color);
+
+    font-size:.75rem;
+    font-weight:700;
+
+    text-transform:uppercase;
+    letter-spacing:.4px;
+}
+
+
+/*== PROJECT CONTENT ==*/
+
+.project-content{
+    padding:25px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+}
+
+.project-content h3{
+    margin-bottom:12px;
+
+    font-size:1.3rem;
+    color:var(--heading-color);
+}
+
+.project-content p{
+    margin-bottom:20px;
+
+    color:var(--text-color);
+
+    font-size:.94rem;
+    line-height:1.7;
+}
+
+
+/*== PROJECT LINK ==*/
+
+.project-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    margin-top:auto;
+
+    color:var(--primary-color);
+
+    font-size:.9rem;
+    font-weight:700;
+
+    transition:var(--transition);
+}
+
+.project-link i{
+    font-size:.8rem;
+    transition:var(--transition);
+}
+
+.project-link:hover{
+    color:var(--secondary-color);
+}
+
+.project-link:hover i{
+    transform:translateX(5px);
+}
+
+
+
+/*== PROJECT PROCESS TOP LINE ==*/
+
+.project-process-card::before{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:4px;
+
+    background:var(--primary-color);
+
+    transform:scaleX(0);
+    transform-origin:left;
+
+    transition:var(--transition);
+}
+
+.project-process-card:hover::before{
+    transform:scaleX(1);
+}
+
+
+/*==================================================
+    PROJECT DELIVERY PROCESS
+==================================================*/
+
+.project-process{
+    background:var(--white-color);
+}
+
+.project-process .section-header{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 55px;
+}
+
+.project-process .section-description{
+    max-width:750px;
+    margin:0 auto;
+}
+
+
+/*== PROCESS GRID ==*/
+
+.project-process-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+
+/*== PROCESS CARD ==*/
+
+.project-process-card{
+    position:relative;
+
+    background:var(--light-color);
+
+    padding:35px 28px;
+
+    border:1px solid var(--border-color);
+    border-radius:var(--radius-md);
+
+    text-align:center;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+    overflow:hidden;
+}
+
+.project-process-card:hover{
+    transform:translateY(-8px);
+
+    background:var(--white-color);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:transparent;
+}
+
+
+/*== PROCESS NUMBER ==*/
+
+.project-process-number{
+    position:absolute;
+
+    top:15px;
+    right:18px;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:.85rem;
+    font-weight:700;
+
+    color:var(--secondary-color);
+
+    opacity:.8;
+}
+
+
+/*== PROCESS ICON ==*/
+
+.project-process-icon{
+    width:70px;
+    height:70px;
+
+    margin:0 auto 22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(10,77,140,.10);
+
+    color:var(--primary-color);
+
+    font-size:1.5rem;
+
+    transition:var(--transition);
+}
+
+.project-process-card:hover .project-process-icon{
+    background:var(--primary-color);
+    color:var(--white-color);
+
+    transform:scale(1.08);
+}
+
+
+/*== PROCESS TEXT ==*/
+
+.project-process-card h3{
+    margin-bottom:12px;
+
+    font-size:1.2rem;
+}
+
+.project-process-card p{
+    margin-bottom:0;
+
+    font-size:.92rem;
+    line-height:1.7;
+}
+
+
+/*==================================================
+    WHY CHOOSE DSS
+==================================================*/
+
+.why-choose{
+    background:var(--light-color);
+}
+
+.why-choose .section-header{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 55px;
+}
+
+.why-choose .section-description{
+    max-width:720px;
+    margin:0 auto;
+}
+
+
+/*== WHY CHOOSE GRID ==*/
+
+.why-choose-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+
+/*== WHY CHOOSE CARD ==*/
+
+.why-choose-card{
+    background:var(--white-color);
+
+    padding:35px 28px;
+
+    border:1px solid var(--border-color);
+    border-radius:var(--radius-md);
+
+    text-align:center;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+}
+
+.why-choose-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:transparent;
+}
+
+/*== WHY CHOOSE DSS TOP LINE ==*/
+
+.why-choose-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.why-choose-card::before{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:4px;
+
+    background:var(--primary-color);
+
+    transform:scaleX(0);
+    transform-origin:left;
+
+    transition:var(--transition);
+}
+
+.why-choose-card:hover::before{
+    transform:scaleX(1);
+}
+
+/*== WHY CHOOSE ICON ==*/
+
+.why-choose-icon{
+    width:65px;
+    height:65px;
+
+    margin:0 auto 22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(10,77,140,.10);
+
+    color:var(--primary-color);
+
+    font-size:1.5rem;
+
+    transition:var(--transition);
+}
+
+.why-choose-card:hover .why-choose-icon{
+    background:var(--primary-color);
+    color:var(--white-color);
+
+    transform:scale(1.08);
+}
+
+
+/*== WHY CHOOSE TEXT ==*/
+
+.why-choose-card h3{
+    margin-bottom:12px;
+
+    font-size:1.3rem;
+}
+
+.why-choose-card p{
+    margin-bottom:0;
+
+    font-size:.94rem;
+    line-height:1.7;
+}
+
+
+/*==================================================
+    PROJECT CTA
+==================================================*/
+
+.project-cta{
+    position:relative;
+
+    padding:75px 0;
+
+    background:var(--primary-color);
+
+    overflow:hidden;
+}
+
+
+/*== DECORATIVE CIRCLES ==*/
+
+.project-cta::before{
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    top:-180px;
+    right:-100px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+}
+
+.project-cta::after{
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    bottom:-150px;
+    left:-80px;
+
+    border-radius:50%;
+
+    background:rgba(0,166,81,.15);
+}
+
+
+/*== CTA CONTENT ==*/
+
+.project-cta-content{
+    position:relative;
+    z-index:2;
+
+    max-width:850px;
+
+    margin:0 auto;
+
+    text-align:center;
+}
+
+
+/*== CTA SUBTITLE ==*/
+
+.project-cta .section-subtitle{
+    color:var(--secondary-color);
+
+    margin-bottom:12px;
+}
+
+
+/*== CTA TITLE ==*/
+
+.project-cta .section-title{
+    color:white;
+
+    font-size:2.5rem;
+
+    margin-bottom:18px;
+}
+
+
+/*== CTA DESCRIPTION ==*/
+
+.project-cta p{
+    max-width:700px;
+
+    margin:0 auto 30px;
+
+    color:rgba(255,255,255,.88);
+
+    font-size:1rem;
+
+    line-height:1.8;
+}
+
+
+/*== CTA BUTTONS ==*/
+
+.cta-buttons{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+
+/* Primary */
+
+.cta-buttons .btn-primary{
+
+    background: var(--secondary-color);
+
+    color: #fff;
+
+    padding: 16px 34px;
+
+}
+
+.cta-buttons .btn-primary:hover{
+
+    background: #fff;
+
+    color: var(--primary-color);
+
+}
+
+/* Secondary */
+
+.cta-buttons .btn-secondary{
+
+    border: 2px solid #fff;
+
+    color: #fff;
+
+    padding: 16px 34px;
+
+}
+
+.cta-buttons .btn-secondary:hover{
+
+    background: #fff;
+
+    color: var(--primary-color);
+
+}
+
+
+
+/*==================================================
+    RESPONSIVE DESIGN
+==================================================*/
+
+@media(max-width:1100px){
+
+    .projects-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-choose-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:1000px){
+
+    .project-process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:992px){
+
+    .projects-overview-wrapper{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .projects-overview-image{
+        max-width:750px;
+        width:100%;
+        margin:0 auto;
+    }
+
+    .projects-overview-content{
+        max-width:750px;
+        margin:0 auto;
+    }
+
+    .projects-overview-content .section-title{
+        font-size:2.4rem;
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .project-overview{
+        padding:80px 0;
+    }
+
+    .projects-overview-wrapper{
+        gap:35px;
+    }
+
+    .projects-overview-image img{
+        height:420px;
+    }
+
+    .projects-overview-content .section-title{
+        font-size:2.2rem;
+    }
+
+    .project-overview-list{
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+
+    /* Portfolio */
+
+    .project-portfolio{
+        padding:80px 0;
+    }
+
+    .project-portfolio .section-header{
+        margin-bottom:40px;
+    }
+
+    .projects-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .project-image{
+        height:220px;
+    }
+
+    .project-content{
+        padding:22px;
+    }
+
+
+    /* Process */
+
+    .project-process{
+        padding:80px 0;
+    }
+
+
+    /* Why Choose */
+
+    .why-choose{
+        padding:80px 0;
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    /* Overview */
+
+    .project-overview{
+        padding:65px 0;
+    }
+
+    .projects-overview-image{
+        border-radius:var(--radius-md);
+    }
+
+    .projects-overview-image img{
+        height:300px;
+    }
+
+    .projects-overview-content .section-title{
+        font-size:1.9rem;
+    }
+
+    .projects-overview-content .section-description{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .project-overview-list{
+        grid-template-columns:1fr;
+    }
+
+    .project-overview-list li{
+        font-size:.95rem;
+    }
+
+
+    /* Portfolio */
+
+    .project-portfolio{
+        padding:65px 0;
+    }
+
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+    .project-image{
+        height:240px;
+    }
+
+    .project-content{
+        padding:22px;
+    }
+
+    .project-content h3{
+        font-size:1.25rem;
+    }
+
+
+    /* Process */
+
+    .project-process{
+        padding:65px 0;
+    }
+
+    .project-process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .project-process-card{
+        padding:30px 22px;
+    }
+
+
+    /* Why Choose */
+
+    .why-choose{
+        padding:65px 0;
+    }
+
+    .why-choose-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-choose-card{
+        padding:30px 22px;
+    }
+
+
+    /* CTA */
+
+    .project-cta{
+        padding:65px 0;
+    }
+
+    .project-cta .section-title{
+        font-size:2rem;
+    }
+
+    .project-cta p{
+        font-size:.92rem;
+        line-height:1.7;
+    }
+
+    .project-cta .cta-buttons{
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .project-cta .cta-buttons .btn{
+        width:100%;
+        max-width:320px;
+        min-height:75px;
+
+        font-size:1.1rem;
+
+        border-radius:16px;
+    }
+
+}
